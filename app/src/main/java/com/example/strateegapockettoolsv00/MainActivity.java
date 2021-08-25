@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra(CalendarContract.Events.TITLE, title.getText().toString());
                     intent.putExtra(CalendarContract.Events.EVENT_LOCATION, location.getText().toString());
                     intent.putExtra(CalendarContract.Events.DESCRIPTION, description.getText().toString());
+                    intent.putExtra(CalendarContract.Events.CAN_INVITE_OTHERS, true);
+                    
 
                     //This is what changes the default agenda need of starting and ending hour making it a all day event
                     intent.putExtra(CalendarContract.Events.ALL_DAY, true);
